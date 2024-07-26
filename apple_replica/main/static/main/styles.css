@@ -62,24 +62,103 @@ header nav ul li a {
     background-image: url('foto1.png');
 }
 
-#section3 {
-    background-image: url('foto3.png');
-}
-
 #section4 {
-    background-color: #d9dbdd;
+    background: #d9dbdd;
 }
 
-.banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1em;
+#section3 {
+    background: #fff;
+    padding: 2em;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.use-cases-header {
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.use-cases-header h2 {
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.use-cases-header p {
+    margin: 0;
+    color: #666;
+}
+
+.use-cases-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.use-case {
+    width: 400px;
+    height: 600px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.use-case img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.use-case:hover {
+    transform: scale(1.05);
+}
+
+.use-case-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.use-case-content h3 {
+    margin: 0 0 10px 0;
+}
+
+.scroll-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.scroll-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .section {
@@ -94,6 +173,7 @@ header nav ul li a {
     width: 100%;
     text-align: center;
     z-index: 1;
+    font-size: 40px;
 }
 
 .dual-section {

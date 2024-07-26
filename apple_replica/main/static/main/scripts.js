@@ -6,3 +6,22 @@ document.addEventListener('scroll', function() {
         banner.style.backgroundPositionY = offset * speed + 'px';
     });
 });
+
+
+function scrollContentLeft() {
+    const container = document.querySelector('.use-cases-container');
+    container.scrollBy({
+        top: 0,
+        left: -400,
+        behavior: 'smooth'
+    });
+}
+
+function scrollContentRight() {
+    const container = document.querySelector('.use-cases-container');
+    container.scrollBy({
+        top: 0,
+        left: 400,
+        behavior: 'smooth'
+    });
+}
