@@ -66,6 +66,10 @@ header nav ul li a {
     background-image: url('foto3.png');
 }
 
+#section4 {
+    background-color: #d9dbdd;
+}
+
 .banner-content {
     position: absolute;
     top: 50%;
@@ -107,11 +111,27 @@ header nav ul li a {
     overflow: auto;
 }
 
+.contact-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
 .half-section form {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
 }
 
 .half-section label {
@@ -131,3 +151,10 @@ header nav ul li a {
     border: none;
     background-color: #333;
     color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}

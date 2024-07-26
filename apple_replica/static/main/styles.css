@@ -66,6 +66,10 @@ header nav ul li a {
     background-image: url('foto3.png');
 }
 
+#section4 {
+    background-color: #d9dbdd;
+}
+
 .banner-content {
     position: absolute;
     top: 50%;
@@ -84,16 +88,45 @@ header nav ul li a {
     margin: 1em 0;
 }
 
+.contact-title {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
 .dual-section {
     display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    margin-top: 5%; /* Adjust the margin to position the dual section correctly */
 }
 
 .half-section {
     width: 50%;
-    padding: 1em;
+    padding: 2em;
     box-sizing: border-box;
+    overflow: auto;
+}
+
+.contact-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .half-section form {
