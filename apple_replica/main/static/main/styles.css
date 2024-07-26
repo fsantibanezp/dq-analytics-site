@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.full-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner1 {
+    background-image: url('imagen2.png');
+}
+
+#section2 {
+    background-image: url('foto1.png');
+}
+
+#section3 {
+    background-image: url('foto3.png');
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.section {
+    padding: 2em;
+    background-color: #f4f4f4;
+    margin: 1em 0;
+}
+
+.contact-title {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.dual-section {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    margin-top: 5%; /* Adjust the margin to position the dual section correctly */
+}
+
+.half-section {
+    width: 50%;
+    padding: 2em;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.half-section form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.half-section label {
+    margin-bottom: 5px;
+}
+
+.half-section input,
+.half-section textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.half-section button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
